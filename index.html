@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wheather App</title>
+  <link href="./images/season.png" rel="icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dai+Banna+SIL:wght@600&family=Inter:wght@200;500&family=Montserrat:wght@900&family=Open+Sans:wght@300&family=Pacifico&family=Rubik:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="header vh-100">
+      <div class="container">
+        <div class="row">
+          <div class=" input-group top-0 start-50 translate-middle w-50 mt-4">
+            <input type="text" class="form-control search p-2 rounded-4 z-0" id="search" name="search"
+              placeholder="Enter your city">
+            <div class="input-group-append ">
+              <button class="btn btn-style position-absolute" type="button" value="Find" id="submit">
+                <li class="fa fa-search text-dark"></li>
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div
+              class="card  main shadow rounded-5 position-relative top-50 start-50 translate-middle flex-row justify-content-evenly align-items-center p-2 ">
+              <div class="row" id="myData">
+
+              </div>
+            </div>
+          </div>
+          <div id="showAnotherDay" class="weather-box-list d-flex position-relative start-50 translate-middle">
+
+          </div>
+        </div>
+      </div>
+  </header>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
